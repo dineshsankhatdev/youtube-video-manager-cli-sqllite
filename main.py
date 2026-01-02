@@ -26,6 +26,7 @@ def main():
                     delete_video()
                 case 5:
                     os.system('cls' if os.name == 'nt' else 'clear')
+                    con_close()
                     print("Thank you for using my app")
                     break
                 case _:
