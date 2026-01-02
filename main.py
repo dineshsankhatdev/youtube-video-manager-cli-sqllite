@@ -15,10 +15,8 @@ def main():
             choice=int(input("Choose Option:- "))
             match choice:
                 case 1:
-                    videos=load_data()
                     list_all_videos()
                 case 2:
-                   
                     add_video()
                 case 3:
                     update_video()
