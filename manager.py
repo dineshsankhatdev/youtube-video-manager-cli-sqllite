@@ -37,11 +37,12 @@ def update_video():
     con.commit()
     
 def delete_video():
-    pass
-
-def save_data(videos):
-    pass
-
+    os.system('cls' if os.name == 'nt' else 'clear')
+    list_all_videos()
+    index=int(input("Enter Video number to delete: "))
+    cursor.execute("DELETE FROM videos where id=?",(index,))
+    con.commit()
+    
 def con_close():
     print("connection close")
     con.close()
