@@ -3,7 +3,6 @@ from manager import *
 
 def main():
     while True:
-        list_all_videos()
         print("\n Youtube Manager | Choose an option")
         print("1.List all youtube videos")
         print("2.Add a youtube video")
